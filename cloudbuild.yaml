@@ -7,3 +7,5 @@ steps:
   args: ['run', 'deploy', 'my-cloud-run-app', '--image', 'gcr.io/$PROJECT_ID/my-cloud-run-app', '--region', 'europe-west1', '--platform', 'managed', '--allow-unauthenticated']
 images:
 - 'gcr.io/$PROJECT_ID/my-cloud-run-app'
+options:
+  logging: CLOUD_LOGGING_ONLY
